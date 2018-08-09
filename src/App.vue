@@ -5,6 +5,7 @@
       <router-link to="/about">About</router-link>
     </div>
     <router-view/>
+    <vue-progress-bar/>
   </div>
 </template>
 
@@ -27,3 +28,5 @@
   }
 }
 </style>
+<script>
+</script>
