@@ -13,7 +13,7 @@
                 <p>Released at:{{studioData.released_date}}, IMDB: {{studioData.rt_score}}%</p>
               </div>
               <div class="description">
-                {{studioData.people}}
+                <a v-for="(person, key) in people" :href="person">{{key}}</a>
               </div>
             </div>
           </div>
@@ -40,7 +40,7 @@ export default {
     .then(response => {
       this.$Progress.finish()
       this.studioData = response.data;
-      this.people = studioData.people;
+      this.people = this.studioData.people;
       // console.log(response.data);
     })
     .catch(e => {
