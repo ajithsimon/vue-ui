@@ -4,9 +4,6 @@ import router from './router'
 import store from './store'
 import './registerServiceWorker'
 
-import axios from 'axios';
-Vue.use(axios);
-
 import VueTruncate from 'vue-truncate-filter'
 Vue.use(VueTruncate);
 
